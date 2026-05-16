@@ -1,0 +1,23 @@
+.contactListContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 8px;
+}
+.contactList{
+    padding: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactList__item{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    list-style: none;
+    margin: 4px;
+    border-radius: 4px;
+   
+}
