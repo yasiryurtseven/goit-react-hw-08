@@ -29,6 +29,13 @@
     align-items: center;
     justify-content: center;
     margin: 20px;
+    background-color: #2a363b;
+    color: #fff;
+
+
+}
+.contact__delete:hover{
+    background-color: #324750;
 
 }
 

@@ -30,16 +30,19 @@
     padding-top: 8px;
 }
 .formButton{
-    border: 1px solid gray;
-    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 8px 0;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2a363b;
+    border: none;
+    border-radius: 7px;
     cursor: pointer;
-    width: auto;
-    height: 30px;
-    padding: 4px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+
+}
+.formButton:hover {
+    background-color: #324750;
 }
 
 .error{

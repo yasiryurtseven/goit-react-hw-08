@@ -3,11 +3,14 @@
     align-items: center;
     gap: 16px;
 }
-.userName {
-    font-size: 16px;
+.userName, .userGreeting {
+    font-size: 18px;
     font-weight: 500;
     color: #2a363b;
+    font-style: italic;
+    text-transform: capitalize;
 }
+
 .button {
     display: inline-block;
     padding: 12px 16px;
@@ -15,7 +18,7 @@
     color: #fff;
     background-color: #2a363b;
     border: none;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
 }
 .button:hover {
