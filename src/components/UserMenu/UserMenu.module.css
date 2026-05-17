@@ -1,0 +1,23 @@
+.userMenu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.userName {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2a363b;
+}
+.button {
+    display: inline-block;
+    padding: 12px 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #2a363b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #324750;
+}

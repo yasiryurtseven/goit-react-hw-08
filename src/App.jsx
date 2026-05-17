@@ -1,10 +1,11 @@
 import { useEffect, lazy, Suspense} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Route, Routes } from "react-router-dom" 
-import { PrivateRoute } from "./components/UserMenu/PrivateRoute"
-import { RestrictedRoute } from "./components/UserMenu/ResrictedRoute"  
+import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute.jsx"
+import { RestrictedRoute } from "./components/ResrictedRoute/ResrictedRoute.jsx"  
 import { selectIsRefreshing } from './redux/auth/selectors'
 import { refreshUser } from './redux/auth/operations'
+import { AppBar } from './components/AppBar/AppBar.jsx'
 import './App.css' 
 
 
@@ -27,6 +28,7 @@ function App() {
     <strong>Refreshing user data...</strong>
   ) : (
     <div>
+      <AppBar />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           {/* Herkese açık rota */}
@@ -49,6 +51,8 @@ function App() {
           />
         </Routes>
       </Suspense>
+      
+   
     </div>
   )
 }

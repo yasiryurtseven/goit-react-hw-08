@@ -21,7 +21,6 @@ const authPersistConfig = {
   whitelist: ["token"],
 };
 
-console.log("Bizim storage neymiş:", storage)
 export const store = configureStore({
   reducer: {
     contacts: contactsReducer, 
